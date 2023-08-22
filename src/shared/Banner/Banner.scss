@@ -1,0 +1,11 @@
+.banner {
+  width: 220px;
+  height: 140px;
+
+  min-width: 220px;
+  min-height: 140px;
+  
+  position: relative;
+  display: grid;
+  place-items: center;
+}

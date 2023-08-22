@@ -1,0 +1,25 @@
+.social-links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  a.social-link {
+    cursor: pointer;
+    transition: 100ms ease all;
+    opacity: .9;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05, 1.05);
+      filter: brightness(150%);
+    }
+  }
+}

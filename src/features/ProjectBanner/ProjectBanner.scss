@@ -1,0 +1,25 @@
+.project-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 220px;
+  width: 220px;
+  overflow: hidden;
+
+  transition: 200ms ease all;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 10;
+  }
+
+  &__tags {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    gap: 6px;
+  }
+}

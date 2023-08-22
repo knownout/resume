@@ -1,0 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  background: #111;
+  color: white;
+}
+
+* {
+  font-weight: 500;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  box-sizing: border-box;
+  height: 100%;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+span.blue, a[href] {
+  transition: 100ms ease all;
+  color: #A1BCFF;
+}
+
+a[href]:hover {
+  color: darken(#A1BCFF, 5%);
+}

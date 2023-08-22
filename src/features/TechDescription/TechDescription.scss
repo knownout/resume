@@ -1,0 +1,18 @@
+.tech-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__description {
+    position: relative;
+    display: inline-block;
+    //gap: 5px;
+    //flex-direction: row;
+
+    span:nth-child(2) {
+      opacity: 0.5;
+      line-height: 24px;
+    }
+  }
+}

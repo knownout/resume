@@ -1,0 +1,54 @@
+.name-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: fit-content;
+
+  &__avatar {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    @media screen and (max-width: 360px) {
+      gap: 0;
+
+      .typography-heading.large {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .typography-heading.paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    gap: 10px;
+  }
+}

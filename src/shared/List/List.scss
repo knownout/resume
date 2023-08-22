@@ -1,0 +1,64 @@
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  padding-left: 10px;
+  width: fit-content;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+
+    width: fit-content;
+
+    gap: 4px;
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+
+  &.large {
+    .list__item {
+      opacity: 1;
+    }
+
+    .list__item-text {
+      font-size: 16px;
+    }
+  }
+
+  &.enumerate {
+    gap: 20px;
+    padding-left: 0;
+
+    .list__item {
+      gap: 10px;
+    }
+
+    .list__item-arrow {
+      opacity: 0.75;
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      border-radius: 8px;
+
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+
+      background: rgba(white, 10%);
+
+      &-number {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.paragraph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &-children {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

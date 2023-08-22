@@ -1,0 +1,21 @@
+.badge {
+  font-size: 12px;
+  color: white;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  gap: 10px;
+  background: rgba(white, 10%);
+  width: fit-content;
+  border-radius: 10px;
+
+  &.blue {
+    background: rgba(#A1BCFF, 10%);
+    color: #A1BCFF;
+  }
+
+  &.gray {
+    color: rgba(white, 50%);
+  }
+}
