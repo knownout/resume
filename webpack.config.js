@@ -126,14 +126,7 @@ const config = {
         alias: {
             "@": path.resolve(__dirname, "src"),
             process: "process/browser",
-            "smart-contract-abi": path.resolve(__dirname, "smart-contract-abi"),
-            "buffer": "buffer",
-            "stream": "stream-browserify"
         },
-        fallback: {
-            "stream": require.resolve("stream-browserify"),
-            "buffer": require.resolve("buffer")
-        }
     },
 
     optimization: {
